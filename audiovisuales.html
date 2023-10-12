@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Glottis, el gato</title>
+
+    <style>
+    body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+    }
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .centrado {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .footer {
+        background-color: #333;
+        color: #FFF;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+        margin-top: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+
+}
+/* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 600px) {
+    nav ul {
+        text-align: center; /* Centra los elementos de la lista */
+        padding: 10px 0; /* Espaciado adicional entre los elementos */
+    }
+
+    nav li {
+        float: none; /* Elimina la propiedad float */
+        display: inline-block; /* Hace que los elementos se muestren en línea */
+        margin: 0 5px; /* Espaciado entre los elementos */
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Glottis, el Gato</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preferencias.html">Preferencias</a></li>
+            <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="centrado">
+    <video src="assets/videos/vid1.MP4" autoplay muted loop></video>
+</div>
+
+<section class="centrado">
+    <div class="gallery">
+        <a href="assets/image/Pic1.JPG" target="_blank"><img src="assets/image/Pic1.JPG" alt="Glottis Imagen 1" width="600"></a>
+        <div class="desc">Glottis 1</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/image/Pic2.JPG" target="_blank"><img src="assets/image/Pic2.JPG" alt="Glottis Imagen 2" width="600"></a>
+        <div class="desc">Glottis 2</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/image/Pic3.JPG" target="_blank"><img src="assets/image/Pic3.JPG" alt="Glottis Imagen 3" width="600"></a>
+        <div class="desc">Glottis 3</div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>Derechos reservados &copy; 2023</p>
+</footer>
+
+
+</body>
+
+</html>
